@@ -1,0 +1,12 @@
+[user]
+	name = Ankit Shankar
+	email = ankitshankar@gmail.com
+[core]
+    editor = vim
+[merge]
+	tool = vimdiff
+
+[color]
+	branch = auto
+	diff = auto
+	status = auto
