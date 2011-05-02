@@ -1,0 +1,105 @@
+unbind all
+
+bind return play
+
+bind l next
+bind ; play-random
+bind h prev
+
+bind space toggle-play
+
+bind - volume -5
+bind = volume +5
+bind M mute
+
+bind L seek 5
+bind H seek -5
+bind ^L seek 10
+bind ^H seek -10
+
+bind m playmode
+bind r repeat
+
+
+
+
+bind a add
+bind A add-all
+
+bind ^B add-album
+bind ^A add-artist
+
+bind x remove
+
+
+
+
+bind i activate-list
+
+bind c cropsel
+bind D clear
+
+bind S shuffle
+
+bind J move +1
+bind K move -1
+
+bind U update thisdir
+
+bind v toggle-select
+bind V clear-selection
+
+
+
+
+bind : command-mode
+
+bind 1 change-window playlist
+bind 2 change-window library
+bind 3 change-window windowlist
+
+set libraryroot=Music/
+bind ^P !exfalso "$(dirname "#")" 2> /dev/null & 
+bind ^O !gnome-open "$(dirname "#")"
+bind ^L redraw
+
+
+
+
+bind j move-down
+bind k move-up
+
+bind ^D move-halfpgdn
+bind ^U move-halfpgup
+
+bind ^F move-pgdn
+bind ^B move-pgup
+
+bind g move-home
+bind G move-end
+
+bind ^Y scroll-up
+bind ^E scroll-down
+
+bind z center-cursor
+
+bind f filter
+bind F clear-filters
+
+bind / quick-find
+
+bind n next-result
+bind N prev-result
+
+bind } next-of albumartist
+bind { prev-of albumartist
+bind ] next-of album
+bind [ prev-of album
+
+bind ` goto-current
+
+set playmode=random
+set scrolloff=4
+set regexsearch
+set status_pause=||
+set crossfade=0
