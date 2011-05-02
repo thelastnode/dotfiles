@@ -1,5 +1,7 @@
 unbind all
 
+bind q quit
+
 bind return play
 
 bind l next
