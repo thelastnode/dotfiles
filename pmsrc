@@ -6,6 +6,7 @@ bind return play
 
 bind l next
 bind ; play-random
+bind R goto-random
 bind h prev
 
 bind space toggle-play
@@ -32,6 +33,7 @@ bind ^B add-album
 bind ^A add-artist
 
 bind x remove
+bind d remove
 
 
 
