@@ -35,6 +35,8 @@ alias vimserver='vim --servername VIM '
 
 alias bc='bc -l'
 
+alias tmux='tmux -2'
+
 if [ -f env/bin/activate ]; then
     . env/bin/activate
 fi
