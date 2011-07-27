@@ -83,11 +83,10 @@ nmap <Leader>j :bp<CR>
 nmap <Leader>o :b#<CR>
 nmap <Leader>t :tabnew<Space>
 
-" Leader maps for movement
-nmap <Leader>u <C-u>
-nmap <Leader>d <C-d>
-nmap <Leader>f <C-f>
-nmap <Leader>b <C-b>
+" FuzzyFinder 
+nmap <Leader>f :FufFile<CR>
+nmap <Leader>l :FufLine<CR>
+nmap <Leader>b :FufBuffer<CR>
 
 " vim-latexsuite
 set grepprg=grep\ -nH\ $*
