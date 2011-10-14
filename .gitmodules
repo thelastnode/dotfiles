@@ -13,3 +13,6 @@
 [submodule "emacs.d/vendor/twilight-emacs"]
 	path = emacs.d/vendor/twilight-emacs
 	url = git://github.com/inkel/twilight-emacs.git
+[submodule "emacs.d/vendor/yasnippet"]
+	path = emacs.d/vendor/yasnippet
+	url = git://github.com/emacsmirror/yasnippet.git
