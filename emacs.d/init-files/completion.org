@@ -36,10 +36,9 @@ match plugin for fuzzy matching.
 #+end_src
 
 ** Key bindings
-Let's use anything for the default buffer and file prompts, and =M-x=.
+Let's use anything for the default buffer prompt, and =M-x=.
 
 #+begin_src emacs-lisp
 (global-set-key (kbd "C-x b") 'anything-buffers-list)
-(global-set-key (kbd "C-x f") 'anything-filelist)
 (global-set-key (kbd "M-x") 'anything-M-x)
 #+end_src
