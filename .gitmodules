@@ -19,3 +19,6 @@
 [submodule "emacs.d/vendor/anything"]
 	path = emacs.d/vendor/anything
 	url = git://github.com/emacsmirror/anything.git
+[submodule "emacs.d/vendor/evil"]
+	path = emacs.d/vendor/evil
+	url = git://github.com/emacsmirror/evil.git

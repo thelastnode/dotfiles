@@ -36,3 +36,11 @@ Why would anyone do this?
 #+begin_src emacs-lisp
 (global-set-key "\C-m" 'newline-and-indent)
 #+end_src
+
+* Evil mode
+Because vim is an excellent text editor.
+
+#+begin_src emacs-lisp
+(add-to-list 'load-path "~/.emacs.d/vendor/evil")
+(require 'evil)
+#+end_src
