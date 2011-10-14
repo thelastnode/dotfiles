@@ -1,0 +1,38 @@
+* Disable menu bars
+We don't need any of the default menu bars, so let's disable those.
+
+#+begin_src emacs-lisp
+(menu-bar-mode 0)
+(tool-bar-mode 0)
+(scroll-bar-mode 0)
+#+end_src
+
+* Change backup behavior
+Creating a =foo.bar~= or =#foo.bar#= files everywhere is messy. Let's
+put them all in one place: =~/.emacs.d/backups=.
+
+As for the actual backups, backup by copying instead of moving (so
+symlinks aren't clobbered), use version control, keep 6 new versions
+and 2 old versions, and silently delete unnecessary backups.
+
+#+begin_src emacs-lisp
+(setq backup-directory-alist '(("." . "~/.emacs.d/backups"))
+      backup-by-copying t
+      delete-old-versions t
+      kept-new-versions 6
+      kept-old-versions 2
+      version-control t)
+#+end_src
+
+* Whitespace
+** Don't mix tabs and spaces
+Why would anyone do this?
+
+#+begin_src emacs-lisp
+(setq-default indent-tabs-mode nil)
+#+end_src
+
+** Autoindent after newline
+#+begin_src emacs-lisp
+(global-set-key "\C-m" 'newline-and-indent)
+#+end_src

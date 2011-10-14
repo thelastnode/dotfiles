@@ -1,0 +1,16 @@
+* Ido
+We want smarter minibuffer completion, so let's enable ido and make it
+available everywhere.
+
+#+begin_src emacs-lisp
+(require 'ido)
+(ido-mode 1)
+(ido-everywhere 1)
+#+end_src
+
+** Flex matching
+Let's turn on fuzzy matching for ido to find stuff faster.
+
+#+begin_src emacs-lisp
+(setq ido-enable-flex-matching t)
+#+end_src

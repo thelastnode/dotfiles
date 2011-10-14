@@ -1,0 +1,6 @@
+[submodule "emacs.d/vendor/icicles"]
+	path = emacs.d/vendor/icicles
+	url = git://github.com/emacsmirror/icicles.git
+[submodule "emacs.d/vendor/org-mode"]
+	path = emacs.d/vendor/org-mode
+	url = git://github.com/emacsmirror/org-mode.git
