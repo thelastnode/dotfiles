@@ -14,3 +14,14 @@ Let's turn on fuzzy matching for ido to find stuff faster.
 #+begin_src emacs-lisp
 (setq ido-enable-flex-matching t)
 #+end_src
+
+* Auto complete mode
+We want auto complete mode so we can have smarter completions. Let's
+load it, along with the dictionaries it comes with.
+
+#+begin_src emacs-lisp
+(add-to-list 'load-path "~/.emacs.d/vendor/auto-complete")
+(require 'auto-complete-config)
+(ac-config-default)
+(add-to-list 'ac-dictionary-directories "~/.emacs.d/vendor/auto-complete/dict")
+#+end_src

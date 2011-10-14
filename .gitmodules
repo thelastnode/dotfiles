@@ -4,3 +4,12 @@
 [submodule "emacs.d/vendor/org-mode"]
 	path = emacs.d/vendor/org-mode
 	url = git://github.com/emacsmirror/org-mode.git
+[submodule "emacs.d/vendor/color-theme"]
+	path = emacs.d/vendor/color-theme
+	url = git://github.com/emacsmirror/color-theme.git
+[submodule "emacs.d/vendor/auto-complete"]
+	path = emacs.d/vendor/auto-complete
+	url = git://github.com/emacsmirror/auto-complete.git
+[submodule "emacs.d/vendor/twilight-emacs"]
+	path = emacs.d/vendor/twilight-emacs
+	url = git://github.com/inkel/twilight-emacs.git
