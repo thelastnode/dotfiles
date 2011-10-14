@@ -25,3 +25,21 @@ load it, along with the dictionaries it comes with.
 (ac-config-default)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/vendor/auto-complete/dict")
 #+end_src
+* Anything
+Anything gives us completion of, well, anything. We also want the
+match plugin for fuzzy matching.
+
+#+begin_src emacs-lisp
+(add-to-list 'load-path "~/.emacs.d/vendor/anything")
+(require 'anything-config)
+(require 'anything-match-plugin)
+#+end_src
+
+** Key bindings
+Let's use anything for the default buffer and file prompts, and =M-x=.
+
+#+begin_src emacs-lisp
+(global-set-key (kbd "C-x b") 'anything-buffers-list)
+(global-set-key (kbd "C-x f") 'anything-filelist)
+(global-set-key (kbd "M-x") 'anything-M-x)
+#+end_src

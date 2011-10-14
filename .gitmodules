@@ -16,3 +16,6 @@
 [submodule "emacs.d/vendor/yasnippet"]
 	path = emacs.d/vendor/yasnippet
 	url = git://github.com/emacsmirror/yasnippet.git
+[submodule "emacs.d/vendor/anything"]
+	path = emacs.d/vendor/anything
+	url = git://github.com/emacsmirror/anything.git
