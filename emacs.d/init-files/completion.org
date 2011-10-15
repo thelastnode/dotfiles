@@ -34,11 +34,3 @@ match plugin for fuzzy matching.
 (require 'anything-config)
 (require 'anything-match-plugin)
 #+end_src
-
-** Key bindings
-Let's use anything for the default buffer prompt, and =M-x=.
-
-#+begin_src emacs-lisp
-(global-set-key (kbd "C-x b") 'anything-buffers-list)
-(global-set-key (kbd "M-x") 'anything-M-x)
-#+end_src
