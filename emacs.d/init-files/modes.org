@@ -1,0 +1,18 @@
+* Jade mode
+Enable significant whitespace mode (=sws-mode=) and =jade-mode= for
+editing Jade templates. Also automatically enable major modes when
+opening =.styl= and =.jade= files.
+
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/vendor/jade-mode")
+  (require 'sws-mode)
+  (require 'jade-mode)
+  (add-to-list 'auto-mode-alist '("\\.styl$" . sws-mode))
+  (add-to-list 'auto-mode-alist '("\\.jade$" . sws-mode))
+#+end_src
+
+* MATLAB mode
+#+begin_src emacs-lisp
+  (load-file "~/.emacs.d/vendor/matlab/matlab.el")
+  (require 'matlab)
+#+end_src

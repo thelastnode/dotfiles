@@ -22,3 +22,9 @@
 [submodule "emacs.d/vendor/evil"]
 	path = emacs.d/vendor/evil
 	url = git://github.com/emacsmirror/evil.git
+[submodule "emacs.d/vendor/matlab"]
+	path = emacs.d/vendor/matlab
+	url = git://github.com/emacsmirror/matlab.git
+[submodule "emacs.d/vendor/jade-mode"]
+	path = emacs.d/vendor/jade-mode
+	url = git://github.com/brianc/jade-mode.git
