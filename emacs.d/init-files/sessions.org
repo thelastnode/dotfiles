@@ -1,0 +1,7 @@
+* Desktop Menu
+Use desktop menu for switching between sets of open buffers and files.
+
+#+begin_src emacs-lisp
+  (load-file "~/.emacs.d/vendor/desktop-menu/desktop-menu.el")
+  (require 'desktop-menu)
+#+end_src
