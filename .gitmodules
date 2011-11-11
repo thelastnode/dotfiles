@@ -34,3 +34,6 @@
 [submodule "emacs.d/vendor/slime"]
 	path = emacs.d/vendor/slime
 	url = git://github.com/emacsmirror/slime.git
+[submodule "emacs.d/vendor/w3m"]
+	path = emacs.d/vendor/w3m
+	url = git://github.com/emacsmirror/w3m.git

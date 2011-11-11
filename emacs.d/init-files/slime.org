@@ -9,3 +9,12 @@ the lisp program to =clisp=.
   (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
   (setq inferior-lisp-program "clisp")
 #+end_src
+
+* w3m mode
+Use =w3m-mode= for browsing hyperspec.
+
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/vendor/w3m")
+  (require 'w3m)
+  (setq browse-url-browser-function 'w3m-browse-url)
+#+end_src
