@@ -1,0 +1,11 @@
+* Slime mode
+Load slime and enable =slime-mode= whenever we enter =lisp-mode=. Set
+the lisp program to =clisp=.
+
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/vendor/slime")
+  (require 'slime)
+  (add-hook 'lisp-mode-hook (lambda () (slime-mode t)))
+  (add-hook 'inferior-lisp-mode-hook (lambda () (inferior-slime-mode t)))
+  (setq inferior-lisp-program "clisp")
+#+end_src

@@ -31,3 +31,6 @@
 [submodule "emacs.d/vendor/desktop-menu"]
 	path = emacs.d/vendor/desktop-menu
 	url = git://github.com/emacsmirror/desktop-menu.git
+[submodule "emacs.d/vendor/slime"]
+	path = emacs.d/vendor/slime
+	url = git://github.com/emacsmirror/slime.git
