@@ -16,3 +16,10 @@ opening =.styl= and =.jade= files.
   (load-file "~/.emacs.d/vendor/matlab/matlab.el")
   (require 'matlab)
 #+end_src
+
+* Haskell mode
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/vendor/haskell-mode")
+  (require 'haskell-mode)
+  (add-to-list 'auto-mode-alist '("\\.hs\\'" . haskell-mode))
+#+end_src
