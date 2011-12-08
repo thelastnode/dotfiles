@@ -15,6 +15,7 @@ opening =.styl= and =.jade= files.
 #+begin_src emacs-lisp
   (load-file "~/.emacs.d/vendor/matlab/matlab.el")
   (require 'matlab)
+  (add-to-list 'auto-mode-alist '("\\.m\\'" . matlab-mode))
 #+end_src
 
 * Haskell mode
