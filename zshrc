@@ -23,6 +23,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 #export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr/lib/perl5/vendor_perl/bin:/usr/bin/perlbin/vendor:/usr/lib/perl5/core_perl/bin
+export PATH=~/.cabal/bin:$PATH
 
 export EDITOR=vim
 
@@ -39,4 +40,8 @@ alias tmux='tmux -2'
 
 if [ -f env/bin/activate ]; then
     . env/bin/activate
+fi
+
+if [ -f ~/.ssh-agent ]; then
+    . ~/.ssh-agent > /dev/null
 fi
