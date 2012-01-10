@@ -40,3 +40,6 @@
 [submodule "emacs.d/vendor/haskell-mode"]
 	path = emacs.d/vendor/haskell-mode
 	url = git://github.com/emacsmirror/haskell-mode.git
+[submodule "emacs.d/vendor/magit"]
+	path = emacs.d/vendor/magit
+	url = git://github.com/emacsmirror/magit.git

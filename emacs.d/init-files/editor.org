@@ -50,3 +50,12 @@ Because vim is an excellent text editor.
 (add-to-list 'load-path "~/.emacs.d/vendor/evil")
 (require 'evil)
 #+end_src
+
+* Magit
+Add git version control support. Bind =C-x g= to =magit-status=.
+
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/vendor/magit")
+  (require 'magit)
+  (global-set-key (kbd "C-x g") 'magit-status)
+#+end_src
