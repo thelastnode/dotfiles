@@ -193,7 +193,7 @@ myLayout = avoidStruts $ algorithms
      nmaster = 1
 
      -- Default proportion of screen occupied by master pane
-     ratio   = 7/10
+     ratio   = 73/100
 
      -- Percent of screen to increment by when resizing panes
      delta   = 3/100
