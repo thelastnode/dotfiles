@@ -8,9 +8,10 @@ Config { font = "-*-Fixed-Bold-R-Normal-*-13-*-*-*-*-*-*-*"
                     , Run Swap [] 20
                     , Run Date "%a %b %_d %H:%M:%S" "date" 5
                     , Run Com "~/bin/battery.py" [] "battery" 20
+                    , Run Com "~/bin/volume.py" [] "volume" 20
                     , Run StdinReader
                     ]
        , sepChar = "%"
        , alignSep = "}{"
-       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% * %battery%   <fc=#ee9a00>%date%</fc>"
+       , template = "%StdinReader% }{ %cpu% | %memory% * %swap% * %battery% | %volume%  <fc=#ee9a00>%date%</fc>"
        }
