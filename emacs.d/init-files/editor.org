@@ -43,6 +43,13 @@ Show column numbers.
 (column-number-mode 1)
 #+end_src
 
+* Revert buffer
+Use =C-x f= for reverting buffer.
+
+#+begin_src emacs-lisp
+  (global-set-key (kbd "C-x f") 'revert-buffer)
+#+end_src
+
 * Evil mode
 Because vim is an excellent text editor.
 
