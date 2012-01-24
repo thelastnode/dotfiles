@@ -29,3 +29,12 @@ Use =haskell-indentation= (as opposed to =haskell-indent= and
 
   (add-hook 'haskell-mode-hook 'turn-on-haskell-indentation)
 #+end_src
+
+* Coffee mode
+#+begin_src emacs-lisp
+  (add-to-list 'load-path "~/.emacs.d/vendor/coffee-mode")
+  (require 'coffee-mode)
+
+  (add-to-list 'auto-mode-alist '("\\.coffee$" . coffee-mode))
+  (add-to-list 'auto-mode-alist '("Cakefile" . coffee-mode))
+#+end_src

@@ -43,3 +43,6 @@
 [submodule "emacs.d/vendor/magit"]
 	path = emacs.d/vendor/magit
 	url = git://github.com/emacsmirror/magit.git
+[submodule "emacs.d/vendor/coffee-mode"]
+	path = emacs.d/vendor/coffee-mode
+	url = git://github.com/defunkt/coffee-mode.git
