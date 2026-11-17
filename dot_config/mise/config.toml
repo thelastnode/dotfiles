@@ -1,0 +1,45 @@
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+minimum_release_age = "2d"
+
+[tools]
+"cargo:sheldon" = "latest"
+chezmoi = "latest"
+"github:sourcegraph/src-cli" = "latest"
+node = "latest"
+"npm:@openai/codex" = "latest"
+"github:coder/coder" = "latest"
+"github:cli/cli" = "latest"
+uv = "latest"
+python = "latest"
+rust = "latest"
+"cargo:rust-script" = "latest"
+"cargo:tokei" = "latest"
+"npm:opencode-ai" = "latest"
+"cargo:hyperfine" = "latest"
+shellcheck = "latest"
+"npm:@playwright/cli" = "latest"
+tmux = "latest"
+duckdb = "latest"
+deno = "latest"
+usage = "latest"
+"npm:@earendil-works/pi-coding-agent" = "latest"
+"github:nkzw-tech/codiff" = "latest"
+ripgrep = "latest"
+fd = "latest"
+bat = "latest"
+fzf = "latest"
+lsd = "latest"
+delta = "latest"
+gron = "latest"
+starship = "latest"
+pnpm = "latest"
+neovim = "latest"
+jj = "latest"
+jjui = "latest"
+git-lfs = "latest"
+cloc = "latest"
+
+[env]
+_.file = { path = "~/.env", redact = true }
+PI_OFFLINE = 1

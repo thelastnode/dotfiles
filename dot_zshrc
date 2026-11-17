@@ -1,0 +1,8 @@
+# `typeset -U path` makes `path` unique, dropping later duplicates.
+typeset -U path
+path=("$HOME/.local/bin" /opt/homebrew/bin $path)
+
+# Only activate tools that are installed, so a fresh machine still gets a working shell.
+(( $+commands[mise] )) && eval "$(mise activate zsh)"
+(( $+commands[sheldon] )) && eval "$(sheldon source)"
+(( $+commands[starship] )) && eval "$(starship init zsh)"

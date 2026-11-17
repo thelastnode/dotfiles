@@ -1,0 +1,57 @@
+shell = "zsh"
+
+# Set before omz history.zsh, which only raises these if they're lower (to 50000/10000).
+[plugins.history-size]
+inline = '''
+HISTSIZE=50000
+SAVEHIST=50000
+'''
+
+# Extra completion definitions. Must load before compinit.
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+dir = "src"
+apply = ["fpath"]
+
+# Completion. Keep this after plugins that add to fpath (e.g. zsh-completions)
+# and before plugins that use completion (e.g. fzf, zsh-autosuggestions).
+[plugins.compinit]
+inline = 'autoload -Uz compinit && compinit'
+
+# oh-my-zsh lib files. Must load after compinit (completion.zsh uses it).
+# - functions.zsh:    helpers misc.zsh needs (env_default), plus take, open_command, ...
+# - completion.zsh:   highlighted Tab menu (Tab/arrows/Ctrl-N/P/F/B), case-insensitive
+#                     matching, WORDCHARS='' (/ - _ break words), no Ctrl-S/Q freeze.
+#                     Cache goes to ~/.zcompcache (zsh default; ZSH_CACHE_DIR unset).
+# - history.zsh:      extended_history, share_history, ignore dups/leading-space, hist_verify
+# - key-bindings.zsh: emacs mode, Up/Down prefix search, Ctrl-arrows, Shift-Tab, Ctrl-X Ctrl-E, ...
+# - misc.zsh:         interactive_comments, URL paste quoting, PAGER/LESS, alias _='sudo '
+[plugins.omz]
+github = "ohmyzsh/ohmyzsh"
+dir = "lib"
+use = ["functions.zsh", "completion.zsh", "history.zsh", "key-bindings.zsh", "misc.zsh"]
+
+# Ctrl-R history, Ctrl-T files, Alt-C cd, **<Tab> fuzzy completion.
+# After omz key-bindings.zsh so fzf's Ctrl-R wins.
+[plugins.fzf]
+inline = '(( $+commands[fzf] )) && source <(fzf --zsh)'
+
+[plugins.aliases]
+inline = '''
+(( $+commands[lsd] )) && alias ls='lsd'
+(( $+commands[bat] )) && alias cat='bat'
+alias gst='git status'
+alias gco='git checkout'
+alias gcp='git cherry-pick'
+'''
+
+# Machine-specific shell config (not checked in), like mise's config.local.toml.
+[plugins.local]
+inline = '[[ -r ~/.config/sheldon/local.zsh ]] && source ~/.config/sheldon/local.zsh'
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+# Must load last.
+[plugins.fast-syntax-highlighting]
+github = "zdharma-continuum/fast-syntax-highlighting"
