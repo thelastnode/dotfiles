@@ -660,6 +660,6 @@ ssh_only = true
 ssh_symbol = ''
 
 [time]
-disabled = false
+disabled = true
 time_format = '%H:%M:%S'
 format = '[](fg:sep bg:bg)[ $time ](fg:66 bg:bg)'
