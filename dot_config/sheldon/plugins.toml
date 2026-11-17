@@ -43,6 +43,7 @@ inline = '''
 alias gst='git status'
 alias gco='git checkout'
 alias gcp='git cherry-pick'
+alias gd='git diff'
 '''
 
 # Machine-specific shell config (not checked in), like mise's config.local.toml.
