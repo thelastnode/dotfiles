@@ -1,0 +1,62 @@
+[settings]
+idiomatic_version_file_enable_tools = ["node"]
+minimum_release_age = "2d"
+
+{{- if env "CODER" }}
+disable_tools = [
+    "cargo:hyperfine",
+    "cargo:rust-script",
+    "github:coder/coder",
+    "npm:@earendil-works/pi-coding-agent",
+    "npm:@opencode/cli",
+    "deno",
+    "duckdb",
+    "gron",
+    "jj",
+    "neovim",
+    "python",
+    "rust",
+    "shellcheck",
+    "uv",
+]
+{{- end }}
+
+
+[tools]
+"cargo:hyperfine" = "latest"
+"cargo:rust-script" = "latest"
+"cargo:sheldon" = "latest"
+"cargo:tokei" = "latest"
+"github:cli/cli" = "latest"
+"github:coder/coder" = "latest"
+"github:sourcegraph/src-cli" = "latest"
+"npm:@earendil-works/pi-coding-agent" = "latest"
+"npm:@openai/codex" = "latest"
+"npm:@opencode/cli" = { version = "latest", allow_builds = "true" }
+"npm:@playwright/cli" = "latest"
+"npm:pnpm" = "latest"
+bat = "latest"
+chezmoi = "latest"
+delta = "latest"
+deno = "latest"
+duckdb = "latest"
+fd = "latest"
+fzf = "latest"
+git-lfs = "latest"
+gron = "latest"
+jj = "latest"
+lsd = "latest"
+neovim = "latest"
+node = "latest"
+python = "latest"
+ripgrep = "latest"
+rust = "latest"
+shellcheck = "latest"
+starship = "latest"
+tmux = "latest"
+usage = "latest"
+uv = "latest"
+
+[env]
+_.file = { path = "~/.env", redact = true }
+PI_OFFLINE = 1
