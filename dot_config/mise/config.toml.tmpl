@@ -60,3 +60,6 @@ uv = "latest"
 [env]
 _.file = { path = "~/.env", redact = true }
 PI_OFFLINE = 1
+{{- with lookPath "zsh" }}
+CLAUDE_CODE_SHELL = {{ . | quote }}
+{{- end }}
