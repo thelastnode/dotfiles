@@ -352,6 +352,7 @@ symbol = ' '
 version_format = '${raw}'
 
 [gradle]
+disabled = true
 format = '[](fg:sep bg:bg)[ ($version )$symbol](fg:44 bg:bg)'
 symbol = ' '
 version_format = '${raw}'
@@ -372,6 +373,7 @@ symbol = ' '
 version_format = '${raw}'
 
 [java]
+disabled = true
 format = '[](fg:sep bg:bg)[ ($version )$symbol](fg:32 bg:bg)'
 symbol = ' '
 version_format = '${raw}'
@@ -406,6 +408,7 @@ symbol = ' '
 version_format = '${raw}'
 
 [nodejs]
+disabled = true
 format = '[](fg:sep bg:bg)[ ($version )$symbol](fg:70 bg:bg)'
 symbol = ' '
 version_format = '${raw}'
@@ -604,6 +607,7 @@ symbol = ' '
 version_format = '${raw}'
 
 [container]
+disabled = true
 format = '[](fg:sep bg:bg)[ ($name )$symbol](fg:178 bg:bg)'
 symbol = ' '
 
