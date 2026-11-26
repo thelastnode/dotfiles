@@ -31,10 +31,11 @@ lsd = "latest"
 delta = "latest"
 gron = "latest"
 starship = "latest"
-pnpm = "latest"
 neovim = "latest"
 jj = "latest"
 git-lfs = "latest"
+"npm:@opencode/cli" = { version = "latest", allow_builds = "true" }
+"npm:pnpm" = "latest"
 
 [env]
 _.file = { path = "~/.env", redact = true }
